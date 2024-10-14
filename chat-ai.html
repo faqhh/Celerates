@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EaseMindly - Chat AI</title>
+
+    <!-- Mengimpor Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Mengimpor Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+    <!-- Mengimpor Font Teachers dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Teachers&display=swap" rel="stylesheet" />
+
+    <!-- Mengimpor file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-200">
+    <header class="bg-yellow-500 p-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <img alt="EaseMindly Logo" class="mr-2" height="10" src="image/logo.png" width="220" />
+        </div>
+        <nav class="flex space-x-6 ml-auto mr-6 py-5">
+            <a class="text-white hover:text-blue-700 py-2" href="index.html">Home</a>
+            <a class="text-white hover:text-blue-700 py-2" href="meditasi.html">Meditasi</a>
+            <a class="text-white hover:text-blue-700 py-2" href="artikel.html">Artikel</a>
+            <a class="text-white hover:text-blue-700 py-2" href="playlist.html">Playlist Musik</a>
+            <a class="text-white hover:text-blue-700 py-2" href="komunitas.html">Komunitas</a>
+            <a class="text-white hover:text-blue-700 py-2" href="chat-ai.html">Chat AI</a>
+            <a class="text-white hover:text-blue-700 py-2" href="profil.html">
+                <i class="fas fa-user"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main class="flex flex-col items-center p-12">
+        <h1 class="text-5xl font-bold mb-8 text-center">Chat dengan AI EaseMindly</h1>
+        <p class="text-xl mb-6 text-center">Tanya apa saja, dan AI kami akan membantu Anda!</p>
+    
+        <div class="bg-white shadow-lg rounded-lg w-full max-w-6xl p-6 mb-6">
+            <div id="chat" class="overflow-y-auto h-72 mb-6 p-4 border border-gray-300 rounded">
+                <!-- Chat messages will appear here -->
+            </div>
+    
+            <div class="relative">
+                <input id="user-input" class="chat-input w-full p-4 border rounded bg-gray-300 pr-16 text-lg" type="text" placeholder="Tanya AI kami..." />
+                <button id="send-button" class="absolute right-4 top-1/2 transform -translate-y-1 bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 text-lg">Kirim</button>
+            </div>
+        </div>
+    </main>
+    
+    
+
+    <footer class="bg-yellow-500 p-4 text-center">
+        <p>&copy; 2024 EaseMindly. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="chat.js"></script>
+</body>
+
+</html>

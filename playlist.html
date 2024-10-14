@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EaseMindly - Playlist Musik</title>
+
+    <!-- Mengimpor Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Mengimpor Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+    <!-- Mengimpor Font Teachers dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Teachers&display=swap" rel="stylesheet" />
+
+    <!-- Mengimpor file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-200">
+    <header class="bg-yellow-500 p-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <img alt="EaseMindly Logo" class="mr-2" height="10" src="image/logo.png" width="220" />
+        </div>
+        <nav class="flex space-x-6 ml-auto mr-6 py-5">
+            <a class="text-white hover:text-blue-700 py-2" href="index.html">Home</a>
+            <a class="text-white hover:text-blue-700 py-2" href="meditasi.html">Meditasi</a>
+            <a class="text-white hover:text-blue-700 py-2" href="artikel.html">Artikel</a>
+            <a class="text-white hover:text-blue-700 py-2" href="playlist.html">Playlist Musik</a>
+            <a class="text-white hover:text-blue-700 py-2" href="komunitas.html">Komunitas</a>
+            <a class="text-white hover:text-blue-700 py-2" href="chat-ai.html">Chat AI</a>
+            <a class="text-white hover:text-blue-700 py-2" href="profil.html">
+                <i class="fas fa-user"></i>
+            </a>
+        </nav>
+    </header>
+<br>
+<br>
+<br>
+
+    <main class="p-8">
+        <h1 class="text-4xl font-bold mb-6 text-center">Playlist Musik untuk Meditasi</h1>
+        <p class="text-lg mb-4 text-center">Dengarkan lagu-lagu yang menenangkan untuk membantu proses meditasi Anda.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="image/music2.jpg" alt="Lagu 1" class="w-full h-48 object-cover" />
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold">Emily Vu - Self Love</h2>
+                    <audio controls class="w-full mt-2">
+                        <source src="audio/Emily Vu -  Self Love (Official Video).mp4" type="audio/mpeg">
+                        Browser Anda tidak mendukung pemutar audio.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="image/music3.jpeg" alt="Lagu 2" class="w-full h-48 object-cover" />
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold">Weird Genius - Sweet Scar</h2>
+                    <audio controls class="w-full mt-2">
+                        <source src="audio/Weird Genius - Sweet Scar (ft. Prince Husein) Official Music Video.mp4" type="audio/mpeg">
+                        Browser Anda tidak mendukung pemutar audio.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="image/music4.jpeg" alt="Lagu 3" class="w-full h-48 object-cover" />
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold">Musik Tenang untuk Meditasi</h2>
+                    <audio controls class="w-full mt-2">
+                        <source src="https://storage.googleapis.com/a1aa/audio/meditation3.mp3" type="audio/mpeg">
+                        Browser Anda tidak mendukung pemutar audio.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://storage.googleapis.com/a1aa/image/playlist4.jpg" alt="Lagu 4" class="w-full h-48 object-cover" />
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold">Melodi Damai</h2>
+                    <audio controls class="w-full mt-2">
+                        <source src="https://storage.googleapis.com/a1aa/audio/meditation4.mp3" type="audio/mpeg">
+                        Browser Anda tidak mendukung pemutar audio.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://storage.googleapis.com/a1aa/image/playlist5.jpg" alt="Lagu 5" class="w-full h-48 object-cover" />
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold">Ketenangan Malam</h2>
+                    <audio controls class="w-full mt-2">
+                        <source src="https://storage.googleapis.com/a1aa/audio/meditation5.mp3" type="audio/mpeg">
+                        Browser Anda tidak mendukung pemutar audio.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://storage.googleapis.com/a1aa/image/playlist6.jpg" alt="Lagu 6" class="w-full h-48 object-cover" />
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold">Musik Tenang untuk Tidur</h2>
+                    <audio controls class="w-full mt-2">
+                        <source src="https://storage.googleapis.com/a1aa/audio/meditation6.mp3" type="audio/mpeg">
+                        Browser Anda tidak mendukung pemutar audio.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-yellow-500 p-4 text-center">
+        <p>&copy; 2024 EaseMindly. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

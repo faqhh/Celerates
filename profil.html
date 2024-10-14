@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi</title>
+    <!-- Mengimpor Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Mengimpor Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+    <!-- Mengimpor Font Teachers dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Teachers&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="profil.css"> <!-- Pastikan file CSS terhubung -->
+</head>
+<body class="bg-gray-200">
+    <!-- Header -->
+    <header class="bg-yellow-400 p-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <img alt="EaseMindly Logo" class="mr-2" height="10" src="image/logo.png" width="220" />
+        </div>
+        <nav class="flex space-x-6 ml-auto mr-6 py-5">
+            <a class="text-white hover:text-blue-700 py-2" href="index.html">Home</a>
+            <a class="text-white hover:text-blue-700 py-2" href="meditasi.html">Meditasi</a>
+            <a class="text-white hover:text-blue-700 py-2" href="artikel.html">Artikel</a>
+            <a class="text-white hover:text-blue-700 py-2" href="playlist.html">Playlist Musik</a>
+            <a class="text-white hover:text-blue-700 py-2" href="komunitas.html">Komunitas</a>
+            <a class="text-white hover:text-blue-700 py-2" href="chat-ai.html">Chat AI</a>
+            <a class="text-white hover:text-blue-700 py-2" href="profil.html">
+                <i class="fas fa-user"></i>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Bagian Profil -->
+    <main class="profile-container">
+        <h2>Profil & Pengaturan</h2>
+        <div class="profile-content">
+            <div class="profile-picture">
+                <img src="image/profile.jpg" alt="Profile Picture">
+                <button class="edit-button">Edit</button>
+            </div>
+            <form class="profile-form">
+                <div class="input-group">
+                    <label for="firstName">Nama depan</label>
+                    <input type="text" id="firstName" value="Jessica">
+                </div>
+                <div class="input-group">
+                    <label for="lastName">Nama belakang</label>
+                    <input type="text" id="lastName" value="Andela">
+                </div>
+                <div class="input-group">
+                    <label for="gender">Jenis kelamin</label>
+                    <input type="text" id="gender" value="Wanita">
+                </div>
+                <div class="input-group">
+                    <label for="age">Umur</label>
+                    <input type="text" id="age" value="25">
+                </div>
+                <div class="input-group">
+                    <label for="status">Status</label>
+                    <input type="text" id="status" placeholder="Belum Menikah">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" value="jessica@email.com">
+                    <button class="change-button">Ubah</button>
+                </div>
+                <div class="input-group">
+                    <label for="password">Kata sandi</label>
+                    <input type="password" id="password" value="****">
+                </div>
+                <div class="input-group">
+                    <label for="linkedAccount">Akun tertaut</label>
+                    <input type="text" id="linkedAccount" value="Google: JessicaAndela@gmail.com">
+                    <button class="change-button">Ubah</button>
+                </div>
+                <div class="input-group">
+                    <label for="language">Bahasa</label>
+                    <input type="text" id="language" value="Indonesia">
+                    <button class="edit-button">Edit</button>
+                </div>
+                <div class="buttons">
+                    <a href="login.html" class="logout-button">Keluar</a>
+                    <button class="delete-account-button">Hapus akun</button>
+                </div>                
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-yellow-500 p-4 text-center">
+        <p>&copy; 2024 EaseMindly. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Tambahkan file script.js jika diperlukan -->
+</body>
+</html>

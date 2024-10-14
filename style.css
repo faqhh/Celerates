@@ -1,0 +1,235 @@
+/* Mengatur font dan membuat semua teks menjadi bold */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Teachers', Arial, sans-serif;
+    font-weight: bold;
+    background: url('https://storage.googleapis.com/a1aa/image/YOUR_BACKGROUND_IMAGE.jpg') no-repeat center center fixed;
+    background-size: cover; /* Menyesuaikan ukuran gambar latar belakang */
+}
+
+/* Mengatur teks di tengah */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 110vh; /* Tinggi penuh layar */
+    text-align: center; /* Teks di tengah */
+}
+
+/* Mengatur warna latar belakang input form menjadi abu-abu */
+input {
+    background-color: #e0e0e0; /* Warna abu-abu */
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0; /* Menetapkan posisi header tetap di atas */
+    z-index: 999; /* Supaya header tetap di atas elemen lainnya */
+    background-color: transparent; /* Warna latar belakang awal */
+    transition: background-color 0.3s ease; /* Transisi untuk perubahan warna */
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Gaya saat di-scroll */
+#main-header.scrolled {
+    background-color: #D97706; /* Ganti dengan warna yang diinginkan saat di-scroll */
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+}
+
+/* Navigasi */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #1D4ED8;
+}
+
+/* Ikon Pengguna */
+.user-icon {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px 50px;
+}
+
+/* Bagian Meditasi */
+.meditation-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.meditation-section img {
+    width: 60%;
+    border-radius: 10px;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.steps .step {
+    background-color: #ffd700;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Input Chat */
+.chat-input {
+    margin-top: 20px;
+    width: 100%; /* Atur lebar input sesuai kebutuhan */
+}
+
+/* Bagian Chat */
+#chat {
+    background-color: #f9f9f9; /* Warna latar belakang chat box */
+    border: 1px solid #ccc; /* Garis border */
+    border-radius: 8px; /* Sudut melengkung */
+    padding: 10px; /* Ruang di dalam */
+    max-height: 400px; /* Tinggi maksimal untuk chat */
+    overflow-y: auto; /* Scroll vertikal jika konten melebihi batas */
+}
+
+/* Gaya untuk pesan pengguna */
+.text-right {
+    text-align: right; /* Pesan pengguna di sebelah kanan */
+    color: #1D4ED8; /* Warna pesan pengguna */
+}
+
+/* Gaya untuk pesan AI */
+.text-left {
+    text-align: left; /* Pesan AI di sebelah kiri */
+    color: #4A5568; /* Warna pesan AI */
+}
+
+/* Footer */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center; /* Teks di tengah footer */
+    background-color: #ffcc00; /* Warna footer */
+    padding: 10px 0; /* Ruang dalam footer */
+}
+
+/* Gelombang di bagian bawah gambar */
+.wavy {
+    height: 100px; /* Tinggi gelombang */
+    background: #ffcc00; /* Warna gelombang */
+    display: flex; /* Menyusun isi dalam flexbox */
+    align-items: center; /* Pusatkan secara vertikal */
+    justify-content: center; /* Pusatkan secara horizontal */
+    text-align: center; /* Teks di tengah */
+    color: white; /* Warna teks putih */
+}
+
+.meditation-info {
+    z-index: 1; /* Pastikan isi di atas gelombang */
+}
+
+/* Gaya untuk judul dan teks */
+.meditation-info h2 {
+    margin-bottom: 5px; /* Ruang bawah untuk judul */
+}
+
+.meditation-info p {
+    margin: 0; /* Hilangkan margin pada paragraf */
+}
+
+/* Kartu Meditasi */
+.meditation-cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.card h4 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+}
+
+/* Tambahkan efek hover untuk tombol daftar */
+button:hover {
+    background-color: #D97706;
+}
+
+/* Tambahkan efek hover untuk tombol masuk */
+a.bg-blue-950:hover {
+    background-color: #1E40AF;
+}
+
+/* Responsif untuk form daftar dan layout */
+@media (max-width: 768px) {
+    .flex-wrap {
+        flex-direction: column;
+    }
+
+    .w-full {
+        width: 100%;
+    }
+
+    .meditation-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .meditation-section img {
+        width: 100%;
+    }
+
+    .meditation-cards {
+        flex-direction: column;
+    }
+}
